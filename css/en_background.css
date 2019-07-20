@@ -8,7 +8,7 @@ body {
     background: url(../img/wave2.png) repeat-x;
     position:absolute;
     left:0;
-    bottom:0%;
+    bottom:-2%;
     width:400%;
     height: 70%;
     animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.00s infinite;
