@@ -60,7 +60,6 @@
 
     .slide__list {
       width: calc(100vw - 40px);
-      height: calc(100vw / 2);
       font-family: Lato, sans-serif;
     }
     .slide__list::before, .slide__list::after {
