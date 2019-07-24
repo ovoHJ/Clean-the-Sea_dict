@@ -29,6 +29,7 @@
     border-radius: 0.125rem;
     transition: 0.3s;
     position: relative;
+    
 }
 .navicon__lines:before, .navicon__lines:after {
     display: inline-block;
@@ -56,6 +57,7 @@
 
 .navicon-x.is--closed .navicon__lines {
     background: transparent;
+    
 }
 .navicon-x.is--closed .navicon__lines:before, .navicon-x.is--closed .navicon__lines:after {
     -webkit-transform-origin: 50% 50%;
@@ -92,6 +94,7 @@ body {
 
 a {
     text-decoration: none;
+    
 }
 
 h1 {
@@ -108,6 +111,7 @@ p {
     padding-bottom: 20px;
     font-size: 17px;
     line-height: 2;
+    
 }
 
 body {
@@ -123,11 +127,11 @@ body:before {
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
     z-index: -1;
-    background: url("../img/a.jpg") no-repeat center center fixed;
+    background: url("../img/bg.png") no-repeat center center fixed;
     background-size: cover;
     -webkit-filter: sepia(0.5);
             filter: sepia(0.5);
-    opacity: 0.4;
+    opacity: 0.9;
 }
 
 .grid {
@@ -153,13 +157,12 @@ body:before {
     height: 100%;
     position: absolute;
     top: 0;
-    max-height: 56px;
+    max-height: 70px;
     width: 100%;
     overflow: hidden;
     z-index: 999;
     transition: all 0.3s;
     font-family: "Oswald", sans-serif;
-    background: none;
 }
 
 @media only screen and (min-width: 766px) {
@@ -285,7 +288,7 @@ nav a {
 }
 
 .section {
-    background: #333;
+    background: rgb(33, 38, 46);
     color: #CCC;
 }
 
@@ -296,45 +299,6 @@ nav a {
     opacity: 1;
 }
 
-.mouse {
-    display: block;
-    margin: 0 auto;
-    width: 26px;
-    height: 48px;
-    border-radius: 12px;
-    background: white;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    border: 2px solid white;
-    position: absolute;
-    bottom: 40px;
-    position: absolute;
-    left: 51%;
-    margin-left: -26px;
-}
-.mouse img {
-    margin-top: 14px;
-    width: 9px;
-    height: auto;
-    opacity: 0.15;
-}
-
-.mouse__wheel {
-    display: block;
-    margin: 6px auto;
-    width: 2px;
-    height: 2px;
-    border-radius: 4px;
-    background: #000;
-    border: 1px solid transparent;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-name: scroll;
-            animation-name: scroll;
-}
 
 @-webkit-keyframes scroll {
     0% {
