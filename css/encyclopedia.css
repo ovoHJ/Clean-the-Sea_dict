@@ -1,3 +1,11 @@
+@font-face { 
+    font-family: 'BBTreeGR'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+
 [data-navicon="button"] {
     display: inline-block;
     margin: 0;
@@ -100,7 +108,7 @@ a {
 h1 {
     margin-top: 0;
     padding-top: 21px;
-    font-family: "Oswald", sans-serif;
+    font-family: 'BBTreeGR';
     font-size: 30px;
     line-height: 1.8;
     text-transform: uppercase;
@@ -115,7 +123,7 @@ p {
 }
 
 body {
-    font-family: "Oswald", sans-serif;
+    font-family: 'BBTreeGR';
     font-weight: 300;
 }
 body:before {
@@ -162,7 +170,7 @@ body:before {
     overflow: hidden;
     z-index: 999;
     transition: all 0.3s;
-    font-family: "Oswald", sans-serif;
+    font-family: 'BBTreeGR';
 }
 
 @media only screen and (min-width: 766px) {
@@ -186,7 +194,7 @@ body:before {
     position: relative;
     text-align: center;
     min-height: 100vh;
-    font-family: "Oswald", sans-serif;
+    font-family: 'BBTreeGR';
     letter-spacing: 2px;
 }
 
@@ -200,13 +208,14 @@ body:before {
 
 .hero__title {
     display: table-cell;
-    height: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
     vertical-align: middle;
-    width: 100%;
+    width: auto;
     font-size: 50px;
     line-height: 2.3;
+    font-size: 100%;
 }
 
 @media only screen and (min-width: 766px) {
@@ -240,7 +249,7 @@ body:before {
 
 @media only screen and (max-width: 766px) {
     .logo {
-        margin-top: 17px;
+        margin-top: 29.5px;
     }
 }
 
@@ -278,7 +287,7 @@ nav a {
 .icon-menu {
     cursor: pointer;
     position: absolute;
-    top: 3px;
+    top: 12px;
     right: 22px;
 }
 @media only screen and (min-width: 766px) {
