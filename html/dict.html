@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
+  <link rel="mask-icon" type="" href="../img/logo.png" color="#111" />
+
+    <title> Clean the Sea </title>
+    
+    <link rel="stylesheet" href="../css/dict.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="../js/dict.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+    <script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
+</head>
+
+  <body>
+    <header class="banner" role="banner">
+        <div class="grid">
+          <a href="dict.html" class="logo scrollto" rel="bookmark">Clean the Sea</a>
+          <button type="button" role="button" aria-label="Toggle Navigation" data-navicon="button" class="icon-menu navicon navicon-x">
+            <span class="navicon__lines"></span>
+          </button>
+          <nav role="navigation">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a href="dict.html" class="scrollto">Info</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="dict.html" class="scrollto">게임</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="dict.html" class="scrollto">해양백과</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="dict.html" class="scrollto">구출단계</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <div class="hero">
+      <h1 class="hero__title">인간이 만든 쓰레기섬으로<br>고통받고 있는 해양생물들에게<br>관심을 가져주세요</h1>
+    </div>
+    <main class="section" role="main">
+        <div class="block">ㅤ</div>
+      <div class="grid">
+        <h1>쓰레기섬의 문제</h1>
+        <div class="mid">  _해양생물 편</div>
+        <p>
+            &nbsp;&nbsp;&nbsp;쓰레기섬은 자연에게 악영향을 미친다. 그 중 가장 눈에 띄게 피해를 보는 생물은 해양생물이다. 인간들이 바다에 버린 그물이나 봉투, 밧줄, 낚싯줄 등에 묶여서 부상과 죽음 등 심각한 영향을 받는 사례는 수없이 많다. 
+            또한 각종 플라스틱 조각을 먹이로 착각하여 삼키면서 소화기관의 부상, 소화용량의 축소 등으로 생존에 심각한 영향을 받거나 죽음에 이르기도 한다. <br>
+            &nbsp;&nbsp;&nbsp;특히 햇빛에 오랜 시간동안 노출되어 잘게 부스러진 마이크로플라스틱은 많은 해양 생물들에게 먹잇감으로 오인되곤 한다. 마이크로플라스틱을 먹은 물고기들은 소화되지 않고 몸속에 그대로 쌓이게 되고, 이들은 다시 먹이사슬을 따라 상위 단계의 포식자들에게 먹힘으로써 결국 생태계 전반으로 퍼져나간다. 즉, 이는 해양 생태계에 치명적인 영향을 미치게 된다.
+          </p>
+      </div>
+      <div class="section">
+        <div class="grid">
+          <h1>피해를 입은 해양생물</h1>
+          <div class="mid">_바다거북</div>
+          <p>
+            
+
+          </p>
+        </div>
+      </div>
+      <p>ㅤ</p>
+    </main>
+
+    <script id="rendered-js">
+      // Config
+      // =================================================
+  
+      var $root = $('html'),
+      $nav_header = $('.banner'),
+      $navicon = $('[data-navicon="button"]'),
+      header_height = $('.banner').height(),
+      hero_height = $('.hero').height(),
+      offset_val = hero_height - header_height,
+      eventType = document.ontouchstart !== null ? 'click' : 'touchstart';
+  
+      // Methods
+      // =================================================
+  
+      function navSlide() {
+        var scroll_top = $(window).scrollTop();
+  
+        if (scroll_top >= offset_val) {
+          $nav_header.addClass('is-sticky');
+        } else {
+          $nav_header.removeClass('is-sticky');
+        }
+      }
+  
+      function menuToggle() {
+        if ($nav_header.hasClass('is-open')) {
+          $root.removeClass('pinned');
+          $nav_header.removeClass('is-open');
+          $navicon.removeClass('is--closed');
+        } else {
+          $root.addClass('pinned');
+          $nav_header.addClass('is-open');
+          $navicon.addClass('is--closed');
+        }
+      }
+  
+      function openNav() {
+        if ($nav_header.hasClass('is-open')) {
+          $nav_header.removeClass('is-open');
+          $root.removeClass('pinned');
+          $navicon.removeClass('is--closed');
+        }
+      }
+  
+      function anchorScroll(event) {
+        var id = $(this).attr('href'),
+        offset = header_height,
+        target = $(id).offset().top - offset;
+  
+        $('html, body').animate({
+          scrollTop: target },
+        500);
+  
+        event.preventDefault();
+      }
+  
+      // Handlers
+      // =================================================
+  
+      $('.scrollto').on(eventType, function () {
+        anchorScroll.call(this, event);
+      });
+  
+      $navicon.on(eventType, menuToggle);
+  
+      $('.banner a').on(eventType, openNav);
+  
+      $(window).scroll(navSlide);
+            //# sourceURL=pen.js
+    </script>
+
+  </body>
+</html>

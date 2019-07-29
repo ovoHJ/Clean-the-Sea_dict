@@ -121,6 +121,9 @@ p {
     line-height: 2;
     text-align: justify;
 }
+.mid {
+    font-size: 22px;
+}
 
 body {
     font-family: 'BBTreeGR';
